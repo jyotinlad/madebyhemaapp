@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 export const StyledPictureBox = styled.button`
 .thumbnails {
-  background-color: #DCDCDC;
   display: block;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 0em;
 }
 
 .thumbnails img {
-  border-radius: 10px;
+  border-radius: 5px;
   display: block;
   width: 100%;
 }
@@ -20,7 +19,7 @@ export const StyledPictureBox = styled.button`
 }
 
 .thumbnails h3 {
-  padding: 1em 0 1em 0;
-  color: #000000;
+  padding: 1em 0 0 0;
+  color: #FFFFFF;
 }
 `;
