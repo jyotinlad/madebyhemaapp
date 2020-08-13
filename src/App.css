@@ -14,7 +14,7 @@ button {
   border-radius: 10px;
   border: 0;
   padding-bottom: 0;
-  background-color: #FFB6C1;
+  background-color: #000;
   margin-bottom: 2em;
 }
 
@@ -173,7 +173,7 @@ h3 {
   display: inline-block;
   margin: 0 0 1em 0;
   padding: 0.5em;
-  border: solid 1px #FFB6C1;
+  border: solid 1px #000;
   background-color: rgba(255, 255, 255, 0.075);
 }
 
@@ -218,11 +218,10 @@ h3 {
   border-radius: 100%;
   display: inline-block;
   padding: 0.5em;
-  border: solid 1px #FFB6C1 /*rgba(255, 255, 255, 0.25)*/;
-  background-color: #FFB6C1 /*rgba(255, 255, 255, 0.075)*/;
+  border: solid 1px #000 /*rgba(255, 255, 255, 0.25)*/;
+  background-color: #000 /*rgba(255, 255, 255, 0.075)*/;
   width: 2.5em;
   height: 2.5em;
-  color: #696969;
 }
 
 .icon.style2:before {
@@ -234,7 +233,7 @@ h3 {
 }
 
 .icon.style2:hover {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 @media screen and (max-width: 736px) {

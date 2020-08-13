@@ -20,7 +20,6 @@ export const StyledPictureBox = styled.button`
 
 .thumbnails h3 {
   padding: 1em 0 0 0;
-  color: #696969;
-  fint-weight: bold;
+  color: #FFFFFF;
 }
 `;
