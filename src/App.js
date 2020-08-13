@@ -5,9 +5,9 @@ import { FiMail } from 'react-icons/fi'
 import PictureBox from './components/picturebox/picturebox.jsx'
 
 const avatar = require("./images/avatar.jpg")
-const thumb_1 = require("./images/thumbs/01.jpg")
-const thumb_2 = require("./images/thumbs/02.jpg")
-const thumb_3 = require("./images/thumbs/03.jpg")
+const thumb_1 = require("./images/thumbs/bridal_wear.jpg")
+const thumb_2 = require("./images/thumbs/indian_wear.jpg")
+const thumb_3 = require("./images/thumbs/soft_furnishings.jpeg")
 const thumb_4 = require("./images/thumbs/04.jpg")
 const thumb_5 = require("./images/thumbs/05.jpg")
 const thumb_6 = require("./images/thumbs/06.jpg")
@@ -25,7 +25,6 @@ function App() {
     <div id="wrapper">
       <header id="header">
         <span className="avatar"><img src={avatar} alt="" /></span>
-        <h1><strong>Made by Hema</strong></h1>
         <ul className="icons">
           <li><a href="https://www.facebook.com/pages/category/Clothing--Brand-/Made-By-Hema-230693307801495/" target="noopener" className="icon style2"><FaFacebookF></FaFacebookF></a></li>
           <li><a href="https://instagram.com/made_by_hema?igshid=vb4s699supde" target="noopener" className="icon style2"><FaInstagram></FaInstagram></a></li>
@@ -36,17 +35,14 @@ function App() {
       <section id="main">
         <section className="thumbnails">
           <div>
-            <PictureBox thumb={thumb_1} desc={"Dresses"} images={images}/>
-            <PictureBox thumb={thumb_2} desc={"Patterns"} images={images}/>
+            <PictureBox thumb={thumb_1} desc={"Bridal Wear"} images={images}/>
           </div>
           <div>
-            <PictureBox thumb={thumb_3} desc={"Bridal Wear"} images={images}/>
-            <PictureBox thumb={thumb_4} desc={"Indian Wear"} images={images}/>
-            <PictureBox thumb={thumb_5} desc={"Home"} images={images}/>
+            <PictureBox thumb={thumb_2} desc={"Indian Wear"} images={images}/>
+            <PictureBox thumb={thumb_3} desc={"Soft Furnishings"} images={images}/>
           </div>
           <div>
-            <PictureBox thumb={thumb_6} desc={"Tailoring"} images={images}/>
-            <PictureBox thumb={thumb_7} desc={"Accessories"} images={images}/>
+            <PictureBox thumb={thumb_6} desc={"Fashion Portfolio"} images={images}/>
           </div>
         </section>
       </section>
