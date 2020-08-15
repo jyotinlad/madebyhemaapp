@@ -5,20 +5,19 @@ import { FiMail } from 'react-icons/fi'
 import PictureBox from './components/picturebox/picturebox.jsx'
 
 const avatar = require("./images/avatar.jpg")
-const thumb_1 = require("./images/thumbs/bridal_wear.jpg")
-const thumb_2 = require("./images/thumbs/indian_wear.jpg")
-const thumb_3 = require("./images/thumbs/soft_furnishings.jpeg")
-const thumb_4 = require("./images/thumbs/04.jpg")
-const thumb_5 = require("./images/thumbs/05.jpg")
-const thumb_6 = require("./images/thumbs/06.jpg")
-const thumb_7 = require("./images/thumbs/07.jpg")
 
-const images = [
-  '//placekitten.com/1500/500',
-  '//placekitten.com/4000/3000',
-  '//placekitten.com/800/1200',
-  '//placekitten.com/1500/1500',
-];
+const thumbBridal = require("./images/thumbs/bridal_wear.jpg")
+const thumbIndian = require("./images/thumbs/indian_wear.jpg")
+const thumbFurnishings = require("./images/thumbs/soft_furnishings.jpeg")
+const thumbFashion = require("./images/thumbs/06.jpg")
+
+function importAll(r) {
+  return r.keys().map(r);
+}
+const imagesBridal = importAll(require.context("./images/collections/bridal_wear", false, /\.(png|jpe?g|svg)$/));
+const imagesIndian = importAll(require.context("./images/collections/indian_wear", false, /\.(png|jpe?g|svg)$/));
+const imagesFurnishings = importAll(require.context("./images/collections/soft_furnishings", false, /\.(png|jpe?g|svg)$/));
+const imagesFashion = importAll(require.context("./images/collections/bridal_wear", false, /\.(png|jpe?g|svg)$/));
 
 function App() {  
   return (
@@ -35,14 +34,14 @@ function App() {
       <section id="main">
         <section className="thumbnails">
           <div>
-            <PictureBox thumb={thumb_1} desc={"Bridal Wear"} images={images}/>
+            <PictureBox thumb={thumbBridal} desc={"Bridal Wear"} images={imagesBridal}/>
           </div>
           <div>
-            <PictureBox thumb={thumb_2} desc={"Indian Wear"} images={images}/>
-            <PictureBox thumb={thumb_3} desc={"Soft Furnishings"} images={images}/>
+            <PictureBox thumb={thumbIndian} desc={"Indian Wear"} images={imagesIndian}/>
+            <PictureBox thumb={thumbFurnishings} desc={"Soft Furnishings"} images={imagesFurnishings}/>
           </div>
           <div>
-            <PictureBox thumb={thumb_6} desc={"Fashion Portfolio"} images={images}/>
+            <PictureBox thumb={thumbFashion} desc={"Fashion Portfolio"} images={imagesFashion}/>
           </div>
         </section>
       </section>
