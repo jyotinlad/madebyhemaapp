@@ -46,7 +46,7 @@ function App() {
         </section>
       </section>
       <footer id="footer">
-        <p>Created With <a href="http://templated.co">TEMPLATED</a></p>
+        <p>Created by <a href="https://www.linkedin.com/in/jyotinlad">Jyotin Lad</a> using <a href="http://templated.co">TEMPLATED</a></p>
       </footer>
     </div>
   );
