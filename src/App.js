@@ -17,7 +17,7 @@ function importAll(r) {
 const imagesBridal = importAll(require.context("./images/collections/bridal_wear", false, /\.(png|jpe?g|svg)$/));
 const imagesIndian = importAll(require.context("./images/collections/indian_wear", false, /\.(png|jpe?g|svg)$/));
 const imagesFurnishings = importAll(require.context("./images/collections/soft_furnishings", false, /\.(png|jpe?g|svg)$/));
-const imagesFashion = importAll(require.context("./images/collections/bridal_wear", false, /\.(png|jpe?g|svg)$/));
+const imagesFashion = importAll(require.context("./images/collections/fashion", false, /\.(png|jpe?g|svg)$/));
 
 function App() {  
   return (
