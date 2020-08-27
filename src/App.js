@@ -9,7 +9,7 @@ const avatar = require("./images/avatar.jpg")
 const thumbBridal = require("./images/thumbs/bridal_wear.jpg")
 const thumbIndian = require("./images/thumbs/indian_wear.jpg")
 const thumbFurnishings = require("./images/thumbs/soft_furnishings.jpeg")
-const thumbFashion = require("./images/thumbs/06.jpg")
+const thumbFashion = require("./images/thumbs/fashion.jpg")
 
 function importAll(r) {
   return r.keys().map(r);
